@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter App</title>
+</head>
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="container">
+            <div class="logo">
+                <img src="./Curr_logo.png" alt="">
+            </div>
+
+        
+        </div>
+            <footer>
+                <button id="skip">skip....</button>
+                
+                <p id="countdown"></p>
+            </footer>
+    </div>
+
+
+
+
+
+
+    <div class="converter">
+        
+        <header>
+            <div class="logo" style="text-align: center;">
+                <a href="./index.html"><img src="./Curr_logo.png" alt="logo" height="80px" style="padding-top: 10px;"></a>
+            </div>
+            <div class="curve"></div>
+
+        </header>
+
+        <div class="convert1">
+            <p>From</p>
+                    
+            <div class="select-div">
+                <select name="" id="currencies-from">
+                        <option value="one">Currency</option>
+                    
+                </select>    
+
+                <input type="number" id="amount">  
+                
+            </div>
+
+                
+            
+
+            <p>To</p>
+
+            <div class="select-div">
+                <select name="" id="currencies-to">
+                    <option value="one">Currency</option>
+                    
+                </select>    
+
+                
+            </div>
+
+            <div>
+                <button onclick="compute()">CONVERT</button>
+            </div>
+            
+
+            <input id="result-screen" readonly> 
+
+            <div class="pre-container" style="font-weight: bold;">
+                <pre id="last-update"></pre>
+                <pre id="next-update"></pre>
+            </div>
+
+            <div class="footer" style="position: relative; top: 5rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';">
+                <button id="docu-button" style="color: #0998ae; background-color: transparent;">Documentation</button>
+            </div>
+            
+
+        </div>
+
+
+       
+        
+    </div>
+
+
+
+    <div class="desktop-mode">
+        
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

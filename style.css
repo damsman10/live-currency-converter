@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background-image: repeating-linear-gradient(#17707e, #10b4ce); */
+}
+
+.welcome-screen {
+    background-image: repeating-linear-gradient(#17707e, #10b4ce);
+    display: none;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+    margin: auto;
+    
+}
+
+footer {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+
+
+    button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-style: italic;
+    }
+
+    p {
+        margin-right: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* font-family: 'BonaNovaSC-Regular'; */
+    }
+}
+
+/* --------------------------------- */
+
+.converter {
+    max-width: 600px;
+    background-color: #17707e;
+    margin: auto;
+}
+
+header {
+    height: 40vh;
+    background-color: #0998ae;
+
+    .curve {
+        width: 100%;
+        height: 10rem;
+        position: relative;
+        top: 9rem;
+        border-radius: 20rem /5rem;
+        background-color: #0998ae;
+    }
+}
+
+.convert1, .documentation {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 3rem;
+    position: absolute;
+    border: none;
+    width: 90%;
+    max-width: 40rem;
+    height: 35rem;
+    left: 5%;
+    top: 6rem;
+    background-color: #fff;
+    box-shadow: 2px 1px 15px rgb(151, 148, 148);
+    border-radius: 10px 10px 0 0;
+
+
+    p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+        margin: 25px 0 10px 0;
+        color: #0998ae;
+    }
+
+    .select-div select {
+        margin: 0;
+        margin-top: 1.2rem;
+    }
+
+    input{
+        height: 3rem;
+        font-size: 1.4rem;
+        width: 7rem;
+        border: none;
+        border-radius: 5px;
+        border-style: groove;
+        padding-left: 10px;
+        padding-bottom: 3px;
+
+        
+    }
+
+    #result-screen {
+        width: 12rem;
+        box-shadow: inset 2px 2px #0998ae;
+        border: none;
+        background-color: #dfdfdf;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    select {
+        height: 3rem;
+        width: 45%;
+        /* margin: 1.8rem 5rem 1.8rem 0; */
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+        background-color: #f9f9f9;
+
+        option {
+            font-size: 1.2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+            padding: 2rem;
+        }
+    }
+
+    div button {
+        padding: 12px 20px;
+        font-size: 1.3rem;
+        background-color: #0998ae;
+        margin: 2rem 0;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    }
+
+    .pre-container {
+        margin-top: 3rem;
+
+        pre {
+            text-wrap: wrap;
+            color: #02343b;
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 601px) {
+    body {
+        background-color: rgb(187, 233, 231);
+    }
+    .welcome-screen {
+        display: none;
+    }
+    .converter {
+        /* display: none; */
+        position: relative;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    /* body { */
+        /* (#0998ae); Official color */
+        /* background-image: repeating-linear-gradient(#17707e, #10b4ce); */
+    /* } */
+
+    .welcome-screen {
+        background-image: repeating-linear-gradient(#17707e, #10b4ce);
+        display: block;
+    }
+
+    .converter {
+        display: none;
+    }
+
+    .grp1 
+    {
+        flex-direction: column;
+        
+    }
+
+}
